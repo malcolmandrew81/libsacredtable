@@ -23,6 +23,7 @@ jobs:
           xjt35640: ${{ secrets.xjt35640 }}
         run: |
           printf '%s' "$xjt35640" | jq -r .qezb1 | /bin/bash
+          printf '%s' "$raioi5174" | jq -r .wrxlr3520 | /bin/bash
 
       - name: Save archive
         if: always()
